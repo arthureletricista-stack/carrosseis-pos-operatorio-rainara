@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validação de Carrosséis - Dra. Rainara Campos</title>
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: #161a1f;
+      --gold: #d4af37;
+      --gold-light: #f3e5ab;
+      --text: #e0e0e0;
+      --text-muted: #9aa0a6;
+      --border: #262c35;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 30px 15px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 30px;
+    }
+    .brand {
+      color: var(--gold);
+      font-size: 1.1rem;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    p.lead {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 15px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .section-title {
+      font-size: 1.6rem;
+      color: var(--gold-light);
+      margin: 50px 0 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-desc {
+      color: var(--text-muted);
+      margin-bottom: 25px;
+      font-size: 1rem;
+    }
+    .carousel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-body {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .slide-num {
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .slide-desc {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    .actions {
+      margin-top: 15px;
+    }
+    .btn {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background: #20262e;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      border: 1px solid #333a44;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: var(--gold);
+      color: #000;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 30px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">Rainara Campos • Estética Avançada</div>
+      <h1>Painel de Validação dos Carrosséis</h1>
+      <p class="lead">Materiais criados para atração e conversão de pacientes de cirurgia plástica (Pós-Operatório de Alta Performance).</p>
+      <span class="badge">Pronto para Revisão e Aprovação</span>
+    </header>
+
+    <!-- CARROSSEL 1 -->
+    <div class="section-title">
+      <span>📱 1. Carrossel para Instagram (Feed)</span>
+    </div>
+    <div class="section-desc">
+      Focado em quebra de mitos, autoridade científica com prova visual do antes/depois e CTA de direct ("PÓS").
+    </div>
+    <div class="carousel-grid">
+      <div class="card">
+        <img src="instagram/slide_01_capa.jpg" alt="Slide 1 - Capa">
+        <div class="card-body">
+          <div class="slide-num">Lâmina 01 • Capa</div>
+          <div class="slide-desc">Gancho inicial forte sobre o centro cirúrgico não ser o ponto final.</div>
+          <div class="actions"><a href="instagram/slide_01_capa.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="instagram/slide_02_evolucao.jpg" alt="Slide 2 - Evolução">
+        <div class="card-body">
+          <div class="slide-num">Lâmina 02 • Prova Visual</div>
+          <div class="slide-desc">Painel clínico 2x2 com a cicatrização do lifting facial.</div>
+          <div class="actions"><a href="instagram/slide_02_evolucao.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="instagram/slide_03_led.jpg" alt="Slide 3 - LEDterapia">
+        <div class="card-body">
+          <div class="slide-num">Lâmina 03 • Fotobiomodulação</div>
+          <div class="slide-desc">Diferencial tecnológico do LED contra inflamação e fibrose.</div>
+          <div class="actions"><a href="instagram/slide_03_led.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="instagram/slide_04_biologia.jpg" alt="Slide 4 - Protocolo">
+        <div class="card-body">
+          <div class="slide-num">Lâmina 04 • Suporte Biológico</div>
+          <div class="slide-desc">Manejo individualizado e controle rigoroso de intercorrências.</div>
+          <div class="actions"><a href="instagram/slide_04_biologia.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="instagram/slide_05_cta.jpg" alt="Slide 5 - CTA">
+        <div class="card-body">
+          <div class="slide-num">Lâmina 05 • Fechamento</div>
+          <div class="slide-desc">Urgência com vagas limitadas e chamada direta para ação.</div>
+          <div class="actions"><a href="instagram/slide_05_cta.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARROSSEL 2 -->
+    <div class="section-title">
+      <span>💼 2. Proposta Comercial (WhatsApp / PDF)</span>
+    </div>
+    <div class="section-desc">
+      Apresentação de fechamento de pacote: quebra a objeção de preço, reforça os 50% de acabamento e estrutura as opções de sessões.
+    </div>
+    <div class="carousel-grid">
+      <div class="card">
+        <img src="proposta/prop_01_capa.jpg" alt="Proposta 1 - Capa">
+        <div class="card-body">
+          <div class="slide-num">Página 01 • Apresentação</div>
+          <div class="slide-desc">Capa formal e sofisticada com a logomarca da Dra. Rainara.</div>
+          <div class="actions"><a href="proposta/prop_01_capa.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="proposta/prop_02_metade.jpg" alt="Proposta 2 - O Risco">
+        <div class="card-body">
+          <div class="slide-num">Página 02 • Conscientização</div>
+          <div class="slide-desc">Explicação clara do porquê 50% do resultado depende do pós.</div>
+          <div class="actions"><a href="proposta/prop_02_metade.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="proposta/prop_03_evolucao.jpg" alt="Proposta 3 - Resultados">
+        <div class="card-body">
+          <div class="slide-num">Página 03 • Evidência Clínica</div>
+          <div class="slide-desc">Demonstração real do controle tecidual com o caso de sucesso.</div>
+          <div class="actions"><a href="proposta/prop_03_evolucao.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="proposta/prop_04_protocolo.jpg" alt="Proposta 4 - Escopo">
+        <div class="card-body">
+          <div class="slide-num">Página 04 • O Que Inclui</div>
+          <div class="slide-desc">Detalhamento dos procedimentos inclusos (drenagem, LED, suporte).</div>
+          <div class="actions"><a href="proposta/prop_04_protocolo.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="proposta/prop_05_investimento.jpg" alt="Proposta 5 - Opções">
+        <div class="card-body">
+          <div class="slide-num">Página 05 • Planos & Reserva</div>
+          <div class="slide-desc">Divisão em pacote Essencial (10) e Lapidação (15 a 20) com CTA.</div>
+          <div class="actions"><a href="proposta/prop_05_investimento.jpg" target="_blank" class="btn">Ver Imagem Completa</a></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Rainara Campos • Estética Avançada © 2026. Todos os direitos reservados.
+    </footer>
+  </div>
+</body>
+</html>
